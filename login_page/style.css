@@ -1,0 +1,106 @@
+/* Seletores */
+body{
+    
+    margin: 0 ; /*Espaçamento da margem */
+    padding: 0; /*Espaçamento vertical */
+    font-family:'Times New Roman', Times, serif /*Escolher o tipo de fonte */
+
+}
+
+
+.login{
+
+    height: 100vh; /*altura*/
+    background: linear-gradient(180deg, #e1e6e1, #0055c5); /*Plano de fundo degradê*/
+    display: flex;/*Mantém a tela fixa sem movimento*/
+    justify-content: center; /*centralizar textos*/
+    align-items: center;    /*Centralizando icones*/
+    
+}
+
+.login__container{
+    min-height: 400px;/*altura do bloco*/
+    width: 300px; /*Largura*/
+    background-color: white; /*Cor do plano de fundo*/
+    box-sizing: border-box; /*Criando borda do bloco*/
+    padding: 32px; /*Espaçamento do bloco*/
+    border-radius: 8px; /*Borda arredondadas*/
+    display: flex; /*Fixa bloco*/
+    flex-direction: column; /*Fixa o bloco em uma única coluna*/
+    align-items: center; /*Centraliza bloco*/
+    box-shadow: 0 20px 20px ;
+} 
+
+.login__title{
+    margin-bottom: 32px; /*Borda da margem*/
+    color: #070707; /*cor*/
+}
+.login__form{
+    width: 100%;/*Largura*/
+    display: flex; /*Fixa o bloco*/
+    flex-direction: column;/*Fixa o bloco em uma única coluna*/
+    align-items: center;/*Centralizando icones*/
+    justify-content: center; /*centralizar textos*/
+    
+}
+
+.login__input{
+    
+    height: 48px; /*Altura*/
+    width: 100%; /*Largura*/
+    box-sizing: border-box;/*Criando borda do bloco*/
+    padding-left: 8px;/*Espaçamento esquerda*/
+    border: unset; /*Retira a borda*/
+    outline: none;/*Retira a linha*/
+}
+
+.login__input-border{
+    height: 2px; /*Altura*/
+    width: 100%;/*Largura*/
+    margin-bottom: 16px;
+    background-color: #cfcfcf;
+    transition: .3s ease-in-out;/*Função de efeitos*/
+    background: linear-gradient(160deg, #fefffe, #0e20c7, #ffffff);
+    
+}
+/*Cunfigurações aplicadas após o click do mouse*/
+.login__input-border::after{
+    content: '';
+    display: black;
+    height: 1px;
+    width: 0;
+    margin-bottom: 16px;
+    background: linear-gradient(120deg, #fefffe, #0e20c7);
+    transition: .3s ease-in-out;
+}
+/*Configuração do botão*/
+.login__submit {
+    height: 48px;
+    width: 80%;
+    outline: none;
+    background: linear-gradient(160deg, #809cd3, #2d42ff, #d2c18d);
+    background-size: 740px;
+    margin-bottom: 32px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius:   40px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+/*Hover é uma propriedade acionada ao passar o mouse*/
+.login__submit:hover {
+    background-position:right;
+}
+
+.login__reset{
+    font-size: 12px; /*Tamanho de fonte*/
+    color: #929292;/*Cor*/
+    text-decoration: none; /*Remove o link*/
+}
+.login__cadastre-se{
+    font-size: 12px;
+    color: #929292;
+    text-decoration: none;
+}
